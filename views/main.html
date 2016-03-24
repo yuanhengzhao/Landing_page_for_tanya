@@ -2,97 +2,110 @@
 	<title>
 	</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <body>
-	<div class="container">
-		<article id="backgroudpage">
-			<div class="btn">
-			<button>Button1</button>
-			<button>Button2</button>
-			</div>
-
-		</article>
+	<div id="backgroudpage" class="container1">
+		<div>
+		<button class="btn-top">Button1</button>
+		<button class="btn-top">Button2</button>
+		</div>
 	</div>
 	
 	<div id="buyer-area" class="area">
 		
 		
-		<article id="buyer-information">
+		<div id="buyer-information">
 			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
-
-Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 30 June 1997, the books have gained immense popularity, critical acclaim and commercial success worldwide. They attracted a wide adult audience, and have remained one of the preeminent cornerstones of young adult literature.[3] The series has also had some share of criticism, including concern about the increasingly dark tone as the series progressed, as well as the often gruesome and graphic violence depicted in the series. As of July 2013, the books have sold more than 450 million copies worldwide, making the series the best-selling book series in history, and have been translated into seventy three languages.[4][5] The last four books consecutively set records as the fastest-selling books in history, with the final instalment selling roughly eleven million copies in the United States within twenty four hours of its release.
-
-A series of many genres, including fantasy, drama, coming of age and the British school story (which includes elements of mystery, thriller, adventure, horror and romance), it has many cultural meanings and references.[6] According to Rowling, the main theme is death.[7] There are also many other themes in the series, such as prejudice, corruption, and madness.[8]
-		</article>
-		
-		<article id="buyer-form">
-			<div id="buyer-name" class="buyer-form-control">
-				Name:
-				<input></input>
-			</div>
-			
-			<div id="buyer-email" class="buyer-form-control">
-				Email:
-				<input></input>
-			</div>
-			
-			<div id="buyer-phone" class="buyer-form-control">
-				Phone:
-				<input></input>
-			</div>
-		</article>
-	</div>
-	<div class="photo-container">
-		<div id="gallery">
-    		<article id="photo1" class= "photos"> 
-				<p class="description">
-					This is a description for photo 1.
-				</p>
-			</article> 
-			<article id="photo2" class= "photos"> 
-				<p class="description">
-					This is a description for photo 2.
-				</p>
-			</article> 
-			
-			<article id="photo3" class= "photos"> 
-				<p class="description">
-					This is a description for photo 3.
-				</p>
-			</article> 
 		</div>
 		<div>
-			<a class="button-up">
-				button3
-			</a>
-			<a class="button-down">
-				button4
-			</a>
+			<form role="form" id="buyer-form">
+				<div id="buyer-name">
+					Name:<br>
+					<input type="text" class="form-control">
+				</div>
+				
+				<div id="buyer-email">
+					Email:<br>
+					<input type="email" class="form-control">
+				</div>
+	
+				<div id="buyer-phone">
+					Phone:<br>
+					<input type="number" class="form-control">
+				</div>
+				<div class="submit">
+				<button type="submit" class="btn-top btn-success col-lg-12">Submit</button>
+				</div>
+			</form>
 		</div>
 	</div>
-		<div id="seller-area" class="area">
-			<article id="seller-form">
-				<div id="seller-name" class="seller-form-control">
-				Name:
-				<input></input>
+	
+	<div id="gallery">
+		<article id="photo1" class= "photos"> 
+			<p class="description">
+				This is a description for photo 1.
+			</p>
+		</article> 
+		<article id="photo2" class= "photos"> 
+			<p class="description">
+				This is a description for photo 2.
+			</p>
+		</article> 
+		
+		<article id="photo3" class= "photos"> 
+			<p class="description">
+				This is a description for photo 3.
+			</p>
+		</article>
+		
+		<span class="button-up btn btn-lg glyphicon glyphicon-chevron-left">
+		</span>
+		
+		<span class="button-down btn glyphicon glyphicon-chevron-right">
+		</span>
+	</div>
+		
+	<div id="seller-area" class="area">
+		<form role="form" id="seller-form">
+			<div id="seller-name">
+				Name:<br>
+				<input type="text" class="form-control">
 			</div>
 			
-			<div id="seller-email" class="seller-form-control">
-				Email:
-				<input></input>
+			<div id="seller-email">
+				Email:<br>
+				<input type="email" class="form-control">
 			</div>
-			
-			<div id="seller-phone" class="seller-form-control">
-				Phone:
-				<input></input>
+	
+			<div id="seller-phone">
+				Phone:<br>
+				<input type="number" class="form-control">
 			</div>
-
-			</article>
-			<article id="seller-information">
-Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
-
-Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 30 June 1997, the books have gained immense popularity, critical acclaim and commercial success worldwide. They attracted a wide adult audience, and have remained one of the preeminent cornerstones of young adult literature.[3] The series has also had some share of criticism, including concern about the increasingly dark tone as the series progressed, as well as the often gruesome and graphic violence depicted in the series. As of July 2013, the books have sold more than 450 million copies worldwide, making the series the best-selling book series in history, and have been translated into seventy three languages.[4][5] The last four books consecutively set records as the fastest-selling books in history, with the final instalment selling roughly eleven million copies in the United States within twenty four hours of its release.
-
-A series of many genres, including fantasy, drama, coming of age and the British school story (which includes elements of mystery, thriller, adventure, horror and romance), it has many cultural meanings and references.[6] According to Rowling, the main theme is death.[7] There are also many other themes in the series, such as prejudice, corruption, and madness.[8]			</article>
+			<div class="submit">
+				<button type="submit" class="btn-top btn-success col-lg-12">Submit</button>
+			</div>
+		</form>
+		
+		<div id="seller-information">
+			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
 		</div>
+	</div>
+	
+	<div id="self-area" class="area">
+		<div id="self-information">
+			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+		</div>
+	</div>
+	
+	<div id="comment-area" class="area">
+		<div id="comment-information">
+			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+		</div>
+	</div>
+	
+	<div id="contac-me">
 	</div>
 </body>

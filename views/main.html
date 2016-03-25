@@ -5,70 +5,71 @@
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="../javascript/landing_page.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <body>
 	<div id="backgroudpage" class="container1">
-		<div>
-		<button class="btn-top">Button1</button>
-		<button class="btn-top">Button2</button>
+		<div id="cover">
+			<!-- <img src="../assert/bird.jpg">	 -->
+		</div>
+		<div id="button-area">
+		<a href="#buyer-area" class="btn-top">Button1</a>
+		<a href="#seller-area" class="btn-top">Button2</a>
 		</div>
 	</div>
-	
-	<div id="buyer-area" class="area">
+	<div id="content">
+		<div id="buyer-area" class="area">
+			
+			
+			<div id="buyer-information">
+				Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+			</div>
+			<div>
+				<form role="form" id="buyer-form">
+					<div id="buyer-name">
+						Name:<br>
+						<input type="text" class="form-control">
+					</div>
+					
+					<div id="buyer-email">
+						Email:<br>
+						<input type="email" class="form-control">
+					</div>
 		
-		
-		<div id="buyer-information">
-			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+					<div id="buyer-phone">
+						Phone:<br>
+						<input type="number" class="form-control">
+					</div>
+					<div class="submit">
+					<button type="submit" class="btn-top btn-success col-lg-12">Submit</button>
+					</div>
+				</form>
+			</div>
 		</div>
-		<div>
-			<form role="form" id="buyer-form">
-				<div id="buyer-name">
-					Name:<br>
-					<input type="text" class="form-control">
-				</div>
-				
-				<div id="buyer-email">
-					Email:<br>
-					<input type="email" class="form-control">
-				</div>
-	
-				<div id="buyer-phone">
-					Phone:<br>
-					<input type="number" class="form-control">
-				</div>
-				<div class="submit">
-				<button type="submit" class="btn-top btn-success col-lg-12">Submit</button>
-				</div>
-			</form>
+		
+		<div id="gallery">
+			<article id="photo1" class= "picture">
+				<img src="../assert/mouse.jpeg">
+				<p class="description">
+					This is a description for photo 1.
+				</p>
+			</article> 
+			<article id="photo2" class= "picture"> 
+				<img src="../assert/flower.jpeg">
+				<p class="description">
+					This is a description for photo 2.
+				</p>
+			</article> 
+			
+			<article id="photo3" class= "picture"> 
+				<img src="../assert/egg.jpeg">
+				<p class="description">
+					This is a description for photo 3.
+				</p>
+			</article>
 		</div>
-	</div>
-	
-	<div id="gallery">
-		<article id="photo1" class= "photos"> 
-			<p class="description">
-				This is a description for photo 1.
-			</p>
-		</article> 
-		<article id="photo2" class= "photos"> 
-			<p class="description">
-				This is a description for photo 2.
-			</p>
-		</article> 
 		
-		<article id="photo3" class= "photos"> 
-			<p class="description">
-				This is a description for photo 3.
-			</p>
-		</article>
-		
-		<span class="button-up btn btn-lg glyphicon glyphicon-chevron-left">
-		</span>
-		
-		<span class="button-down btn glyphicon glyphicon-chevron-right">
-		</span>
-	</div>
-		
-	<div id="seller-area" class="area">
+		<div id="seller-area" class="area">
 		<form role="form" id="seller-form">
 			<div id="seller-name">
 				Name:<br>
@@ -93,19 +94,41 @@
 			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
 		</div>
 	</div>
-	
-	<div id="self-area" class="area">
+		
+		
+		<div id="self-area" class="area">
 		<div id="self-information">
-			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+			<h1>Hello and Welcome</h1>
+			<p>
+			I have been selling Toronto's most beautiful properties for over 15 years. As one of the most well-known and experienced real estate agents in the city, I have seen it all. Clients come back to me every day because they value my commitment to perfect service, as well as my drive to get them the best possible results. Let me show you how I can do the same for you. Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.
+			</p>
+		</div>
+		<div id="self-information-image">
+			<img src="../assert/images.jpeg" alt="self-information-image" />
 		</div>
 	</div>
 	
 	<div id="comment-area" class="area">
 		<div id="comment-information">
-			Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, the Dark wizard who intends to become immortal, overthrow the Ministry of Magic, subjugate non-magic people and destroy anyone who stands in his way.
+			<h1>Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.</h1>
+			<h2>By John Mayer, Halcyon, ECO</h2>
 		</div>
 	</div>
 	
-	<div id="contac-me">
+	<div id="contact-me">
+		<h1>YAO, DAGE &nbsp; &nbsp; AGENT</h1>
+		<ul>
+			<li><a href="/index/home.com">&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+			<li><a href="/index/listings.com">&nbsp;&nbsp;&nbsp;&nbsp;Listings</a></li>
+			<li><a href="/index/approach.com">&nbsp;&nbsp;&nbsp;&nbsp;Approach</a></li>
+			<li><a href="/index/press.com">&nbsp;&nbsp;&nbsp;&nbsp;Press</a></li>
+			<li><a href="/index/contact.com">&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="footer">
+		<p>&copy;BORIS KHOLODOV, 2015. ALL CONTENT SUBJECT TO ERRORS AND OMISSIONS. *BY NUMBER OF MLS LISTINGS SOLD IN 2014 IN DOWNTOWN/CENTRAL (DISTRICTS C01/C08/C02/C09 COMBINED).</p>
+	</div>
+		</div>
 	</div>
 </body>

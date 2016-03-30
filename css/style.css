@@ -1,6 +1,4 @@
-body  {
-		    background-color: #cccccc;
-		    margin:0;
+body {
 }
 
 #content {
@@ -8,20 +6,23 @@ body  {
 	margin:0 auto;
 	}
 
-#backgroudpage {
+#backgroundpage {
 	text-align:center;
-	position:relative;
-	/*overflow:auto;*/
-    /*height:100vh;*/
-    background-image: url("../assert/bird.jpg");
+	/*position:relative;*/
+	overflow:auto;
+    height:100vh;
+    background-image: url("../assert/cover.jpg");
 	background-repeat:no-repeat;
-	/*margin:0 auto;*/
-    /*background-size:100% auto;*/
-    opacity: 0.7;
+	background-attachment: fixed;　
+	/*background-position:top;*/
+	margin:0 auto;    
+	background-size:100% auto;
+    opacity: 0.8;
     webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 6s;
+    /*transform: scale(1.1);*/
     }
     
     @-webkit-keyframes example {
@@ -32,11 +33,17 @@ body  {
     	  -o-filter: grayscale(100%);
     	  filter: grayscale(100%);
     	  filter: gray;	
+    	  /*transform: scale(1.0);*/
     }
-    to {opacity:0.7;}
+    to {opacity:0.8;
+    	/*transform: scale(1.1);*/
+    	}
 }
 
-    
+/*#cover img {
+	width:100%;
+	height:100vh;
+}   */
 /*@media screen and (min-width: 408px) {
     #backgroundpage {
     text-align:center;
@@ -53,11 +60,39 @@ body  {
 	weight: 100vh;
 	overflow:hidden;
 }*/
-   
+ 
+
+#backgroundpage h1 {
+	font-weight: 500;
+	font-size: 100px;
+	border-top:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	color:#FFFFFF;
+	width:1024px;
+	margin-top:300px;
+	margin:0 auto;
+}
+
 #button-area a {
-	margin-top: 500px;
+	/*position:relative;*/
+	margin-top:300px;
+	margin-bottom: 80px;
 	margin-left:12.5px;
 	margin-right: 12.5px;
+	text-decoration: none;
+}
+
+#button-area a:first-child {
+	/*position:absolute;*/
+	border: 2px solid #a6a6a6;
+	background-color: #ff99cc;
+	color: #ffffff;
+}
+
+#button-area a:last-child {
+	border: 2px solid #ff99cc;
+	background-color: #a6a6a6;
+	color: #ffffff;
 }
 
 a:-webkit-any-link {
@@ -105,6 +140,10 @@ a:-webkit-any-link {
 	width: 70%;
 	padding-left:15px;
 	padding-right:15px;
+
+	font-family: "DIN Next W01 Light", Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	color: #8c8c8c;
 }
 
 #buyer-form {
@@ -116,6 +155,18 @@ a:-webkit-any-link {
 	padding-right:15px;
 }
 
+#submit1 {
+	border: 2px solid #a6a6a6;
+	background-color: #ff99cc;
+	color: #ffffff;
+}
+
+#submit2 {
+	border: 2px solid #ff99cc;
+	background-color: #a6a6a6;
+	color: #ffffff;
+}
+
 .btn {
 	margin-top:20px;
 }
@@ -125,6 +176,7 @@ a:-webkit-any-link {
 	margin:0 auto;
 	width:100%;
 	height:300px;
+	margin-top: 20px;
 	margin-bottom: 50px;
 	font-family: Bodoni MT W01 Bold, Times New Roman, serif;	font-weight: 200;
 	font-size: 19px;
@@ -141,6 +193,8 @@ a:-webkit-any-link {
 .picture img {
 	width:100%;
 	height:100%;
+padding: 0 5px;
+opacity: 0.7;
 }
 .picture {
 	/*position:relative;*/
@@ -187,20 +241,16 @@ a:-webkit-any-link {
 	margin-top:-150px;
 }
 
-/*.picture:hover ~ .picture{
-	-webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;	
-}*/
 #seller-information {
 	padding-top:40px;
 	padding-left:15px;
 	padding-right:15px;
 	float:right;
 	width: 70%;
+	
+	font-family: "DIN Next W01 Light", Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	color: #8c8c8c;
 }
 
 #seller-form {

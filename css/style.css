@@ -1,37 +1,50 @@
 body {
 }
 
-#content {
+.content {
 	width:1280px;
 	margin:0 auto;
 	}
 
 #backgroundpage {
-	/*-webkit-filter: brightness(70%);
-	-moz-filter: brightness(70%);
-	-ms-filter: brightness(70%);
-	-o-filter: brightness(70%);
-	filter: brightness(70%);*/
-	text-align:center;
-	/*position:relative;*/
+	position: relative;
+	height:100vh;
+	z-index: 1;
 	overflow:auto;
-    height:100vh;
-    background-image: url("../assert/cover.jpg");
-	background-repeat:no-repeat;
-	background-attachment: fixed;　
-	/*background-position:top;*/
-	margin:0 auto;    
-	background-size:100% auto;
-    opacity: 1;
-    webkit-animation-name: example; /* Chrome, Safari, Opera */
+	text-align:center;
+	margin:0 auto;   
+	webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 6s;
-    /*transform: scale(1.1);*/
-   	z-index: -1;
-    }
-    
-    @-webkit-keyframes example {
+}
+
+
+
+#backgroundpage:after {
+	content: "";
+	position:absolute;
+	background-image: url("../assert/cover.jpg");
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);  
+	-ms-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	filter: brightness(70%);	/*background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;*/
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	
+
+}
+ @-webkit-keyframes example {
     from {opacity:1;
     	  -webkit-filter: grayscale(100%);
     	  -moz-filter: grayscale(100%);
@@ -49,6 +62,16 @@ body {
 
     	}
 }
+
+
+
+
+
+
+
+
+
+
 
 /*#cover img {
 	width:100%;
@@ -90,14 +113,19 @@ body {
 	width:65%;
 	float:left;
 	vertical-align: middle;
+	color:#FFFFFF;
 
+}
+
+.header-contact a{
+	color:#FFFFFF;
 }
 .title {
 	margin-top:100px;
 	z-index: 1;
 }
 .title h1 {
-  	font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  	font: 400 130px/0.8 "Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	color:#FFFFFF;
 	width:1024px;
@@ -113,14 +141,16 @@ body {
 }
 
 #button-area a:first-child {
-	border: 2px solid #a6a6a6;
-	background-color: #a80446;
+	background-color: #b01d58;
+	/*border-top: 5px solid #b01d58; */
+	border-bottom: 5px solid #97033f;
 	color: #ffffff;
 }
 
 #button-area a:last-child {
-	border: 2px solid #a80446;
 	background-color: #a6a6a6;
+	/*border-top: 5px solid #aeaeae;*/
+	border-bottom: 5px solid #959595;
 	color: #ffffff;
 }
 
@@ -130,20 +160,16 @@ body {
 }
 .btn-top {
 	margin-top:30px;
-	padding: 15px 10px 15px 10px;
-    border-width: 0px 0px 3px;
-    border: 1px solid #a80446;
-    border-radius: 5px;
-    border-radius: 6px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    background-color: rgb(255, 153, 204, 1);
+	padding: 7px 10px 7px 10px;
+    /*border-width: 0px 0px 3px;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;*/
     display: inline-block;
     width: 300px;
-    
     text-align: center;
     display: inline-block;
     text-overflow: ellipsis;
-    white-space: nowrap;	
+    /*white-space: nowrap;	*/
     font-family: "Questrial", sans-serif;
     font-size: 18px;
 }
@@ -158,31 +184,37 @@ body {
 	width: 70%;
 	padding-left:15px;
 	padding-right:15px;
-	font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+	font: 400 100px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
  	color: rgba(0,0,0,0.7);
   	text-shadow: 3px 3px 3px #fff;
 	font-size: 45px;
 }
 
 #buyer-form {
-	0px;
 	float:right;
-	width: 30%;
-	padding:15px;
-	background-color:#f2aab0;
+	width: 25%;
+	padding: 15px;
+	background-color:rgba(242,170,176,0.4);
+	
 	font-family: "Questrial", sans-serif;
     font-size: 18px;
 }
 
 #submit1 {
-	border: 2px solid #a6a6a6;
 	background-color: #a80446;
+	/*border-top: 5px solid #b01d58; */
+	border-bottom: 5px solid #97033f;
+	border-left:0;
+	border-right:0;
 	color: #ffffff;
 }
 
 #submit2 {
-	border: 2px solid #a80446;
 	background-color: #a6a6a6;
+	/*border-top: 5px solid #aeaeae;*/
+	border-bottom: 5px solid #959595;
+	border-left:0;
+	border-right:0;
 	color: #ffffff;
 }
 
@@ -195,7 +227,6 @@ body {
 	margin:0 auto;
 	width:100%;
 	margin-top: 40px;
-	margin-bottom: 20px;
 	font-family: Bodoni MT W01 Bold, Times New Roman, serif;	font-weight: 200;
 	font-size: 18px;
 	vertical-align:middle;
@@ -203,6 +234,7 @@ body {
 
 .form-title {
 	text-align:center;
+	color:#FFFFFF;
 }
 
 #gallery {
@@ -267,7 +299,7 @@ body {
 	display:block;
 	margin-top: 150px;
 	/*vertical-align:middle;*/
-	font: 400 50px/1.2 'Merienda One', Helvetica, sans-serif;
+	font: 400 50px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
  	color: #FFFFFF;
   	text-shadow: 3px 3px 3px #fff;
   	font-size:20px;
@@ -299,6 +331,7 @@ body {
 }
 
 #seller-area {
+	width:100%;
 	position: relative;
 	height:390px;
 	z-index: 1;
@@ -333,7 +366,7 @@ body {
 	padding:15px;
 	float:right;
 	width: 70%;
-	font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+	font: 400 100px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
  	color: #FFFFFF;
   	/*text-shadow: 3px 3px 3px #fff;*/
 	font-size: 45px;
@@ -341,10 +374,12 @@ body {
 }
 
 #seller-form {
-	padding:15px;
+	padding:0 15px 15px 15px;
 	float:left;
-	width: 30%;
-	background-color:#f2aab0;
+	width: 25%;
+	height: 390px;
+	background-color:rgba(0,0,0,0.4);
+	/*background-color:#f2aab0;*/
 	font-family: "Questrial", sans-serif;
     font-size: 18px;
 }
@@ -373,14 +408,15 @@ body {
 }
 
 #self-area h1 {
-	font: 400 50px/1.2 'Merienda One', Helvetica, sans-serif;
+	font: 400 50px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
  	color: rgba(0,0,0,0.7);
   	text-shadow: 3px 3px 3px #fff;
-  	font-size:20px;
+  	font-size:30px;
+  	text-align:center;
 }
 
 #self-area {
-	font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+	font: 400 100px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
  	color: rgba(0,0,0,0.7);
   	text-shadow: 3px 3px 3px #fff;
   	font-size:25px;
@@ -448,16 +484,17 @@ body {
 
 #comment-area h1 {
 	width:1280px;
-	
+	height:100%;
 	font-family: 'Brush Script MT', cursive;
 	color: #FFFFFF;
 	font-size: 2em;
 	padding: 12px 12px 0 12px;
-	overflow:inherit;
+	overflow:hidden;
 	margin: 0 auto;
 }
 
 #comment-information h2 {
+	width:1280px;
 	font-family: "Bodoni MT W01 Book", "Times New Roman", serif;
 	font-size: 1.3em;
 	color: #FFFFFF;

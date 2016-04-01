@@ -1,0 +1,43 @@
+#backgroundpage {
+	/*-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	filter: brightness(70%);*/
+	text-align:center;
+	/*position:relative;*/
+	overflow:auto;
+    
+    background-image: url("../assert/cover.jpg");
+	background-repeat:no-repeat;
+	background-attachment: fixed;　
+	/*background-position:top;*/
+	margin:0 auto;    
+	background-size:100% auto;
+    opacity: 1;
+    webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 6s;
+    /*transform: scale(1.1);*/
+   	z-index: -1;
+    }
+    
+    @-webkit-keyframes example {
+    from {opacity:1;
+    	  -webkit-filter: grayscale(100%);
+    	  -moz-filter: grayscale(100%);
+    	  -ms-filter: grayscale(100%);
+    	  -o-filter: grayscale(100%);
+    	  filter: grayscale(100%);
+    	  filter: gray;	
+    }
+    to {
+    	  /*-webkit-filter: brightness(70%);
+    	  -moz-filter: brightness(70%);
+    	  -ms-filter: brightness(70%);
+    	  -o-filter: brightness(70%);
+    	  filter: brightness(70%);*/
+
+    	}
+}

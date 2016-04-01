@@ -42,6 +42,28 @@ $(function() {
 	    });});
 });
 
+var tweets = ['"Tanya, thank you so much for helping us find our new home! You were very patient with us throughout the entire process, showing us several homes before we finally found the right one. We loved your enthusiasm and the time and effort you put in to finding us the perfect home. We will absolutely recommend you to any of our friends in the GTA."',
+			  "Second",
+			  "Third",
+			  "Forth"];
+
+window.onload = function displayTweets(){
+    $('#comment-information h1').html(tweets[0]);
+    var i = 1;
+    setInterval(
+        function(){
+            $('#comment-information h1').html(tweets[i]).fadeIn(500).delay(1000).fadeOut(500);
+            i++;
+            if(i >= tweets.length) i = 0;
+        },2000);
+};
+
+
+$('#comment-area').width($(document).width());
+
+
+
+
 
 jQuery(window).scroll(function(){
     var fromTopPx = 1; // distance to trigger

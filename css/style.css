@@ -26,6 +26,7 @@ body {
 	position:absolute;
 	background-image: url("../assert/cover.jpg");
 	background-repeat:no-repeat;
+	background-attachment: fixed;　
 	background-size:100% auto;
 	-webkit-filter: brightness(70%);
 	-moz-filter: brightness(70%);  
@@ -278,7 +279,7 @@ body {
 	/*margin-top:-150px;*/
 	color:#FFFFFF;
 }
-.picture:hover  .picture img{
+.picture:hover .three-image {
 	-webkit-filter: brightness(50%);
 	-moz-filter: brightness(50%);
 	-ms-filter: brightness(50%);
@@ -286,6 +287,7 @@ body {
 	filter: brightness(50%);
 	transition:all .2s ease-in-out;
 	transform: scale(1.1);
+	z-index: -1;
 	
 	/*-moz-filter: blur(1px);
     -webkit-filter: blur(1px);
@@ -303,6 +305,7 @@ body {
  	color: #FFFFFF;
   	text-shadow: 3px 3px 3px #fff;
   	font-size:20px;
+  	z-index: 1;
 	/*opacity:1;*/
 
 	

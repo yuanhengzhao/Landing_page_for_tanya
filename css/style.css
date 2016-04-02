@@ -12,6 +12,7 @@ body {
 	height:100vh;
 	z-index: 1;
 	overflow:auto;
+	background-size:100% auto;
 	text-align:center;
 	margin:0 auto;   
 	webkit-animation-name: example; /* Chrome, Safari, Opera */
@@ -28,16 +29,12 @@ body {
 	background-image: url("../assert/cover.jpg");
 	background-repeat:no-repeat;
 	background-attachment: fixed;　
-	background-size:100% auto;
+	
 	-webkit-filter: brightness(70%);
 	-moz-filter: brightness(70%);  
 	-ms-filter: brightness(70%);
 	-o-filter: brightness(70%);
-	filter: brightness(70%);	/*background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;*/
+	filter: brightness(70%);	
 	z-index: -1;
 	width: 100%;
 	height: 100vh;
@@ -352,11 +349,12 @@ body {
     -moz-filter: brightness(70%);  
 	-ms-filter: brightness(70%);
     -o-filter: brightness(70%);
-    filter: brightness(70%);	/*background-attachment: fixed;
+    filter: brightness(70%);	
+    background-size:cover;
 	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 0px;*/
+	left: 0px;
 	z-index: -1;
 	width: 100%;
 	height: 100%;
@@ -459,7 +457,7 @@ body {
 #comment-area:after {
 	content: "";
 	position: absolute;
-	background-image: url("../assert/images2.jpeg");
+	background-image: url("../assert/Testmonial Background.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 	width: 100%;

@@ -46,19 +46,17 @@ var comments = ['"Tanya, thank you so much for helping us find our new home! You
 			  "WOW! Tanya is an amazing person all around. The love that she has for her career and the kindness and understanding she carries with her shows in her beautiful smile and success in selling any home. I came to a situation in which I needed to sell my house as quickly as possible and I honestly didn't know how I was going to do it, then I talked to Tanya and she put all of my worries at ease. Not only did she answer all of my questions she gave me peace of mind that everything was in her hands.",
 			  '"Thank you Tanya for all the information & guidance you provided, especially the staging. Your friendly, diligent, confident & professional approach assured me that you would help me achieve my goal & I did! The house sold in less than a week & for more than asking! In fact you are already in demand in my circle of friends. & of course in the neighbourhood. You are highly recommended. Thank you once again. Keep up the good work & my family wishes you SUCESS in all your endeavours."',
 			  '"Tanya was a pleasure to work with. Very professional and personable. Quick to understand our needs and preferences, gaining insights even we ourselves intially did not recognize. I would recommend Tanya without hesitation."'];
-var names = ["By: Ann D'souza","By: Ann D'souza", "By: Robert McBean", "By: Michelle Strilive"];			  
 
-window.onload = function displayTweets(){
+window.onload = function displayComments(){
     $('#comment-information h1').html(comments[0]);
-    // $('#comment-information h2').html(names[0]);
-    var i = 1;
+    var i = 0;
     setInterval(
         function(){
-            $('#comment-information h1').html(comments[i]).fadeIn(2000).delay(2000).fadeOut(2000);
-            // $('#comment-information h2').html(names[i]).fadeIn(2000).delay(2000).fadeOut(2000);
+            $('#comment-information h1').html(comments[i]).fadeIn(200).delay(10000).fadeOut(200);
             i++;
-            if(i >= names.length) i = 0;
-        },2000);
+            if(i >= names.length-1) 
+            	i = 0;
+        },1000);
 };
 
 

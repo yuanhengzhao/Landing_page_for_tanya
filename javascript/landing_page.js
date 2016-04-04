@@ -80,7 +80,7 @@ window.onload = function displayComments(){
 
 
 // $('#comment-area').width($(document).width());
-var images = ['../assert/cover.jpg', '../assert/House Photo .jpg','../assert/Interior Photo.jpg' ];
+var images = ['../assert/cover.jpg', '../assert/house-photo.jpg','../assert/Interior Photo.jpg' ];
 
 window.onload = function setgrey() {
 	console.log('dsfg');

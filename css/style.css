@@ -130,10 +130,10 @@ body {
 	weight: 100vh;
 	overflow:hidden;
 }*/
-tanya-branding {
+
+div#kid {
 	width:1280px;
-	margin-top:20px;
-	z-index:2;
+	margin:20px auto;
 	
 }
 

@@ -64,66 +64,58 @@ window.onload = function displayComments(){
 };
 
 
-$('#comment-area').width($(document).width());
+// window.onload = function setimage() {
+	// console.log('dsfg');
+	// $('.gray-image').css({
+		// "-webkit-filter": "grayscale(100%)",
+	    // "-moz-filter": "grayscale(100%)",
+	    // "-ms-filter": "grayscale(100%)",
+	    // "-o-filter": "grayscale(100%)",
+	    // "filter": "grayscale(100%)",
+	    // "filter": "gray"
+	   // });
+// };
 
+
+
+
+// $('#comment-area').width($(document).width());
+var images = ['../assert/cover.jpg', '../assert/Testmonial Background.jpg','../assert/bird.jpg' ];
 
 window.onload = function setgrey() {
-	$('#cover-image').css({
-		"-webkit-filter": "grayscale(100%)",
-	    "-moz-filter": "grayscale(100%)",
-	    "-ms-filter": "grayscale(100%)",
-	    "-o-filter": "grayscale(100%)",
-	    "filter": "grayscale(100%)",
-	    "filter": "gray"
-	   });
+	console.log('dsfg');
+    var i = 1;
+    setInterval(
+        function(){
+        	console.log("1234");        	
+        	
+              $("#image-test").attr("src", images[i]);
+		              i++;
+		            if(i >= comments.length-1) 
+		            	i = 0;
+                    },5000);
+	
+	
+	
+	// $('.gray-image').css({
+		// "-webkit-filter": "grayscale(100%)",
+	    // "-moz-filter": "grayscale(100%)",
+	    // "-ms-filter": "grayscale(100%)",
+	    // "-o-filter": "grayscale(100%)",
+	    // "filter": "grayscale(100%)",
+	    // "filter": "gray"
+	   // });
 };
 
+// $( "#cover-image img" ).animate(css{
+		// -webkit-filter: "grayscale(100%)",
+	    // -moz-filter: "grayscale(100%)",
+	    // -ms-filter: "grayscale(100%)",
+	    // "-o-filter": "grayscale(100%)",
+	    // "filter": "grayscale(100%)",
+	    // "filter": "gray"
+	   // }, 1000);
 
-
-
-
-function home_page_slideshow_check() {
-
-            var d = $('.home-slideshow .large-orbit-slider').height();
-            var w = $(window).height();
-            var s = $(this).scrollTop();
-            var bottomBound = 5;
-            var captionHeight = $('.home-slideshow .orbit-caption').height();
-
-
-            // are we beneath the bottom bound?
-            if (d - (w + s) > bottomBound) {
-                //console.log(d - (w + s));
-                $('.home-slideshow .orbit-caption').css({
-                    bottom: (d - (w + s)) - 10
-                });
-
-                $('.orbit-prev,.orbit-next').css({
-                    bottom: (d - (w + s)) - 10 + captionHeight - 57
-                });
-
-            } else {
-
-                $('.home-slideshow .orbit-caption').css({
-                    bottom: 0
-                });
-                $('.orbit-prev,.orbit-next').css({
-                    bottom: 0 + captionHeight - 57
-                });
-
-            }
-
-            if (s > d) {
-                $(".home-page .side-nav").addClass("fixedImportant");
-            } else {
-                $(".home-page .side-nav").removeClass("fixedImportant");
-            }
-
-            $('.home-slideshow .globe-button').css({
-                top: (d / 2) - 50
-            });
-
-        }
 
 
 

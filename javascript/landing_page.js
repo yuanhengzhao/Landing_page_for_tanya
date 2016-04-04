@@ -47,6 +47,10 @@ var comments = ['"Tanya, thank you so much for helping us find our new home! You
 			  '"Thank you Tanya for all the information & guidance you provided, especially the staging. Your friendly, diligent, confident & professional approach assured me that you would help me achieve my goal & I did! The house sold in less than a week & for more than asking! In fact you are already in demand in my circle of friends. & of course in the neighbourhood. You are highly recommended. Thank you once again. Keep up the good work & my family wishes you SUCESS in all your endeavours."',
 			  '"Tanya was a pleasure to work with. Very professional and personable. Quick to understand our needs and preferences, gaining insights even we ourselves intially did not recognize. I would recommend Tanya without hesitation."'];
 
+
+
+
+
 window.onload = function displayComments(){
     $('#comment-information h1').html(comments[0]);
     var i = 0;
@@ -54,7 +58,7 @@ window.onload = function displayComments(){
         function(){
             $('#comment-information h1').html(comments[i]).fadeIn(200).delay(10000).fadeOut(200);
             i++;
-            if(i >= names.length-1) 
+            if(i >= comments.length-1) 
             	i = 0;
         },1000);
 };
@@ -63,6 +67,63 @@ window.onload = function displayComments(){
 $('#comment-area').width($(document).width());
 
 
+window.onload = function setgrey() {
+	$('#cover-image').css({
+		"-webkit-filter": "grayscale(100%)",
+	    "-moz-filter": "grayscale(100%)",
+	    "-ms-filter": "grayscale(100%)",
+	    "-o-filter": "grayscale(100%)",
+	    "filter": "grayscale(100%)",
+	    "filter": "gray"
+	   });
+};
+
+
+
+
+
+function home_page_slideshow_check() {
+
+            var d = $('.home-slideshow .large-orbit-slider').height();
+            var w = $(window).height();
+            var s = $(this).scrollTop();
+            var bottomBound = 5;
+            var captionHeight = $('.home-slideshow .orbit-caption').height();
+
+
+            // are we beneath the bottom bound?
+            if (d - (w + s) > bottomBound) {
+                //console.log(d - (w + s));
+                $('.home-slideshow .orbit-caption').css({
+                    bottom: (d - (w + s)) - 10
+                });
+
+                $('.orbit-prev,.orbit-next').css({
+                    bottom: (d - (w + s)) - 10 + captionHeight - 57
+                });
+
+            } else {
+
+                $('.home-slideshow .orbit-caption').css({
+                    bottom: 0
+                });
+                $('.orbit-prev,.orbit-next').css({
+                    bottom: 0 + captionHeight - 57
+                });
+
+            }
+
+            if (s > d) {
+                $(".home-page .side-nav").addClass("fixedImportant");
+            } else {
+                $(".home-page .side-nav").removeClass("fixedImportant");
+            }
+
+            $('.home-slideshow .globe-button').css({
+                top: (d / 2) - 50
+            });
+
+        }
 
 
 

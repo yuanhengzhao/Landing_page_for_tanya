@@ -32,6 +32,7 @@ body {
     -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 3s;	
+    
 }
 
 
@@ -221,17 +222,17 @@ div#kid {
 	width: 70%;
 	padding-left:15px;
 	padding-right:15px;
-	font: 400 100px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
  	color: rgba(0,0,0,0.7);
   	text-shadow: 3px 3px 3px #fff;
-	font-size: 45px;
+	font-size: 37px;
 }
 
 #buyer-form {
 	float:right;
 	width: 25%;
 	padding: 15px;
-	background-color:#ebebe0;
+	background-color:#787878;
 	
 	font-family: "Questrial", sans-serif;
     font-size: 18px;
@@ -372,7 +373,7 @@ div#kid {
 #seller-area {
 	width:100%;
 	position: relative;
-	height:390px;
+	height:480px;
 	z-index: 1;
 	
 }
@@ -405,19 +406,19 @@ div#kid {
 #seller-information {
 	padding:15px;
 	float:right;
-	width: 70%;
-	font: 400 100px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	width: 65%;
+	font-family: 'Roboto', sans-serif;
  	color: #FFFFFF;
   	/*text-shadow: 3px 3px 3px #fff;*/
-	font-size: 45px;
+	font-size: 37px;
 	z-index: 1;
 }
 
 #seller-form {
-	padding:0 15px 15px 15px;
+	padding:20px 10px 10px 20px;
 	float:left;
 	width: 25%;
-	height: 390px;
+	height: 480px;
 	background-color:rgba(0,0,0,0.4);
 	/*background-color:#f2aab0;*/
 	font-family: "Questrial", sans-serif;

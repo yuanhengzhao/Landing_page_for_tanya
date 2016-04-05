@@ -216,16 +216,27 @@ div#kid {
 	height:330px;
 }
 
+#e-book {
+   width:18%; 
+   float:left;
+}
+
+#e-book img {
+    margin-left:20px;
+    width:100%;
+}
+
 #buyer-information {
+    margin-left:50px;
 	padding-top:20px;
 	float:left;
-	width: 70%;
+	width: 50%;
 	padding-left:15px;
 	padding-right:15px;
 	font-family: 'Roboto', sans-serif;
  	color: rgba(0,0,0,0.7);
   	text-shadow: 3px 3px 3px #fff;
-	font-size: 37px;
+	font-size: 34px;
 }
 
 #buyer-form {
@@ -488,7 +499,7 @@ div#kid {
 	
 	margin: 0 auto;
 	padding: 15px;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 	background-color: #ffe6ff;
 	z-index: 1;

@@ -105,11 +105,53 @@ body {
 
 
 
+.left {
+    width:50%;
+    float:left;
+}
 
+.left img {
+    float:left;
+}
 
+#footer-img {
+    width:1280px;
+    height:100px;
+}
 
+.logo {
+    height:100px;
+}
 
+#footer-img img {
+    height:100%;
+}
 
+.right {
+    text-align:right;
+    width:50%;
+    float:right;
+}
+
+.right img {
+    float:right;
+}
+
+#footer-info {
+    font:50px;
+}
+
+#footer-id-for-tanya {
+    text-align:left;
+    width:50%;
+    float:left;
+}
+
+#footer-id-for-tanya-company {
+    text-align:right;
+    width:50%;
+    float:right;
+}
 
 /*#cover img {
 	width:100%;
@@ -532,9 +574,7 @@ div#kid {
 	margin: 1em 0 0 0;
 }
 
-#comment-information ul {
-	list-style-type: none;
-}
+
 
 #comment-area h1 {
 	width:1280px;
@@ -547,9 +587,9 @@ div#kid {
 	margin: 0 auto;
 }
 
-#comment-information h2 {
+#comment-information p {
 	width:1280px;
-	font-family: "Bodoni MT W01 Book", "Times New Roman", serif;
+	font-family: 'Brush Script MT', cursive;
 	font-size: 1.3em;
 	color: #FFFFFF;
 	text-align: right;
@@ -582,7 +622,6 @@ div#kid {
 }
 
 #footer {
-	text-align:center;
 	width: 1280px;
 	margin: 0 auto;
 	padding: 0;

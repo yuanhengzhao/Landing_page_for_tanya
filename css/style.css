@@ -349,10 +349,11 @@ div#kid {
 }
 
 #step {
-	width:100%;
-	height:300px;
+	width:1024px;
+	height:240px;
 	font:"Arial Black";
-	font-size:30px;
+	font-size:25px;
+	margin:0 auto;
 }
 
 #step h1 {
@@ -373,7 +374,7 @@ div#kid {
 #seller-area {
 	width:100%;
 	position: relative;
-	height:480px;
+	height:460px;
 	z-index: 1;
 	
 }
@@ -404,9 +405,9 @@ div#kid {
 
 
 #seller-information {
-	padding:15px;
+	padding:80px;
 	float:right;
-	width: 65%;
+	width: 68%;
 	font-family: 'Roboto', sans-serif;
  	color: #FFFFFF;
   	/*text-shadow: 3px 3px 3px #fff;*/
@@ -415,14 +416,15 @@ div#kid {
 }
 
 #seller-form {
-	padding:20px 10px 10px 20px;
+	padding:30px 20px 10px 20px;
 	float:left;
 	width: 25%;
-	height: 480px;
+	height: 460px;
 	background-color:rgba(0,0,0,0.4);
 	/*background-color:#f2aab0;*/
 	font-family: "Questrial", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
+    
 }
 
 

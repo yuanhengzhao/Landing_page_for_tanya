@@ -20,27 +20,27 @@ $(function() {
   
 });
 
-$(function() {
-	$('.picture').hover(function(e) {
-		$('.picture').not(this).css({
-		"-webkit-filter": "grayscale(100%)",
-	    "-moz-filter": "grayscale(100%)",
-	    "-ms-filter": "grayscale(100%)",
-	    "-o-filter": "grayscale(100%)",
-	    "filter": "grayscale(100%)",
-	    "filter": "gray"
-	    });
-	},
-	function(e) {
-		$('.picture').not(this).css({
-		"-webkit-filter": "grayscale(0%)",
-	    "-moz-filter": "grayscale(0%)",
-	    "-ms-filter": "grayscale(0%)",
-	    "-o-filter": "grayscale(0%)",
-	    "filter": "grayscale(0%)",
-	    "filter": "none"
-	    });});
-});
+// $(function() {
+// 	$('.picture').hover(function(e) {
+// 		$('.picture').not(this).css({
+// 		"-webkit-filter": "grayscale(100%)",
+// 	    "-moz-filter": "grayscale(100%)",
+// 	    "-ms-filter": "grayscale(100%)",
+// 	    "-o-filter": "grayscale(100%)",
+// 	    "filter": "grayscale(100%)",
+// 	    "filter": "gray"
+// 	    });
+// 	},
+// 	function(e) {
+// 		$('.picture').not(this).css({
+// 		"-webkit-filter": "grayscale(0%)",
+// 	    "-moz-filter": "grayscale(0%)",
+// 	    "-ms-filter": "grayscale(0%)",
+// 	    "-o-filter": "grayscale(0%)",
+// 	    "filter": "grayscale(0%)",
+// 	    "filter": "none"
+// 	    });});
+// });
 
 var comments = ['"Tanya, thank you so much for helping us find our new home! You were very patient with us throughout the entire process, showing us several homes before we finally found the right one. We loved your enthusiasm and the time and effort you put in to finding us the perfect home. We will absolutely recommend you to any of our friends in the GTA."',
 			  "WOW! Tanya is an amazing person all around. The love that she has for her career and the kindness and understanding she carries with her shows in her beautiful smile and success in selling any home. I came to a situation in which I needed to sell my house as quickly as possible and I honestly didn't know how I was going to do it, then I talked to Tanya and she put all of my worries at ease. Not only did she answer all of my questions she gave me peace of mind that everything was in her hands.",

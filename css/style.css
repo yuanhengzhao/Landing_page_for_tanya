@@ -29,9 +29,9 @@ body {
 	-o-filter: brightness(70%);
 	filter: brightness(70%);
 	-webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
     animation-name: example;
-    animation-duration: 3s;	
+    animation-duration: 6s;	
     
 }
 
@@ -64,7 +64,7 @@ body {
 	
 
 }*/
- /*@-webkit-keyframes example {
+ @-webkit-keyframes example {
     from {opacity:1;
     	  -webkit-filter: grayscale(100%);
     	  -moz-filter: grayscale(100%);
@@ -72,16 +72,19 @@ body {
     	  -o-filter: grayscale(100%);
     	  filter: grayscale(100%);
     	  filter: gray;	
+    	  -webkit-filter: brightness(100%);
+    	  -moz-filter: brightness(100%);
+    	  -ms-filter: brightness(100%);
+    	  -o-filter: brightness(100%);
+    	  filter: brightness(100%);
     	
-    	  z-index:-1;
     }
     to {
-    	  /*-webkit-filter: brightness(70%);
+    	  -webkit-filter: brightness(70%);
     	  -moz-filter: brightness(70%);
     	  -ms-filter: brightness(70%);
     	  -o-filter: brightness(70%);
-    	  filter: brightness(70%);*/
-		  /*z-index: 1;*/
+    	  filter: brightness(70%);
     	}
 }
 
@@ -94,12 +97,14 @@ body {
     	  filter: grayscale(100%);
     	  
     	  /*filter: gray;	*/
-    	  z-index:-1;
     }
     to {
-    	
+    	  -webkit-filter: brightness(70%);
+    	  -moz-filter: brightness(70%);
+    	  -ms-filter: brightness(70%);
+    	  -o-filter: brightness(70%);
+    	  filter: brightness(70%);
     	  
-    	  z-index: -1;
     	}
 }*/
 

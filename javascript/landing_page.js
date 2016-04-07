@@ -20,36 +20,6 @@ $(function() {
   
 });
 
-// $(function() {
-// 	$('.picture').hover(function(e) {
-// 		$('.picture').not(this).css({
-// 		"-webkit-filter": "grayscale(100%)",
-// 	    "-moz-filter": "grayscale(100%)",
-// 	    "-ms-filter": "grayscale(100%)",
-// 	    "-o-filter": "grayscale(100%)",
-// 	    "filter": "grayscale(100%)",
-// 	    "filter": "gray"
-// 	    });
-// 	},
-// 	function(e) {
-// 		$('.picture').not(this).css({
-// 		"-webkit-filter": "grayscale(0%)",
-// 	    "-moz-filter": "grayscale(0%)",
-// 	    "-ms-filter": "grayscale(0%)",
-// 	    "-o-filter": "grayscale(0%)",
-// 	    "filter": "grayscale(0%)",
-// 	    "filter": "none"
-// 	    });});
-// });
-
-
-
-
-
-
-
-
-
 
 
 var comments = ["When we sold our building in Milton, which was commercial with our apartment upstairs, Tanya's husband, Aldrin, took care of the deal. He introduced us to Tanya, who jumped in with both feet. Tanya helped Kimberly stage the apartment, brought in finishing touches, and gave us pointers along the way ... She always explained a feature, and the value buyers put into it and the value to our family specifically. Tanya really understood what we needed ... Thank you Tanya! <br> <p>-- Steve & Kimberly Bonin</p>",
@@ -81,50 +51,6 @@ window.onload = function displayContents(){
                 	index = 0;
         },11000);
 };
-
-
-// window.onload = function setimage() {
-	// console.log('dsfg');
-	// $('.gray-image').css({
-		// "-webkit-filter": "grayscale(100%)",
-	    // "-moz-filter": "grayscale(100%)",
-	    // "-ms-filter": "grayscale(100%)",
-	    // "-o-filter": "grayscale(100%)",
-	    // "filter": "grayscale(100%)",
-	    // "filter": "gray"
-	   // });
-// };
-
-
-
-
-// $('#comment-area').width($(document).width());
-
-
-
-	
-	
-	// $('.gray-image').css({
-		// "-webkit-filter": "grayscale(100%)",
-	    // "-moz-filter": "grayscale(100%)",
-	    // "-ms-filter": "grayscale(100%)",
-	    // "-o-filter": "grayscale(100%)",
-	    // "filter": "grayscale(100%)",
-	    // "filter": "gray"
-	   // });
-
-
-// $( "#cover-image img" ).animate(css{
-		// -webkit-filter: "grayscale(100%)",
-	    // -moz-filter: "grayscale(100%)",
-	    // -ms-filter: "grayscale(100%)",
-	    // "-o-filter": "grayscale(100%)",
-	    // "filter": "grayscale(100%)",
-	    // "filter": "gray"
-	   // }, 1000);
-
-
-
 
 jQuery(window).scroll(function(){
     var fromTopPx = 1; // distance to trigger

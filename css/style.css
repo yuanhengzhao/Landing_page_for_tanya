@@ -8,7 +8,6 @@ body {
 
 #cover-page {
 	
-	/*width:100%;*/
 	overflow:hidden;
 	text-align:center;
 	
@@ -49,21 +48,6 @@ body {
 
 
 
-/*#cover-page:after {
-	content: "";
-	position:absolute;
-	background-repeat:no-repeat;
-	background-attachment: fixed;　
-	
-		
-	z-index: -1;
-	width: 100%;
-	height: 100vh;
-	top: 0px;
-	left: 0px;
-	
-
-}*/
  @-webkit-keyframes example {
     from {opacity:1;
     	  -webkit-filter: grayscale(100%);
@@ -158,26 +142,6 @@ body {
     float:right;
 }
 
-/*#cover img {
-	width:100%;
-	height:100vh;
-}   */
-/*@media screen and (min-width: 408px) {
-    #backgroundpage {
-    text-align:center;
-	position:relative;
-	overflow:hidden;
-    height: 100vh;
-    background-image: url("../assert/bird.jpg");
-	background-repeat:no-repeat;
-    background-size:100% auto;
-    opacity: 0.7;
-    }*/
-/*#cover img{
-	height: 100vh;
-	weight: 100vh;
-	overflow:hidden;
-}*/
 
 div#kid {
 	width:1280px;
@@ -198,7 +162,6 @@ div#kid {
 	text-align:left;
 	width:65%;
 	float:left;
-	/*vertical-align: middle;*/
 	color:#FFFFFF;
 
 }
